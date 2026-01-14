@@ -7,4 +7,5 @@ urlpatterns = [
     path('create/', views.EmpleadoCreateView.as_view(), name='empleado_create'),
     path('<int:pk>/update/', views.EmpleadoUpdateView.as_view(), name='empleado_update'),
     path('<int:pk>/delete/', views.EmpleadoDeleteView.as_view(), name='empleado_delete'),
+    path('<int:pk>/json/', views.empleado_json, name='empleado_json'),
 ]
