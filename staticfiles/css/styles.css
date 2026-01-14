@@ -152,6 +152,7 @@ body {
 .search-input {
   position: relative;
   flex: 1;
+  max-width: 400px;
 }
 
 .search-input input {
@@ -174,6 +175,7 @@ body {
 .filter-buttons {
   display: flex;
   gap: 0.5rem;
+  margin-left: auto;
 }
 
 .table-container {
