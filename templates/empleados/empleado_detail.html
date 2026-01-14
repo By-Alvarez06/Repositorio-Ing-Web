@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de Empleado</title>
+</head>
+<body>
+    <h1>{{ empleado.nombres }} {{ empleado.apellidos }}</h1>
+    <p>Empresa ID: {{ empleado.empresa_id }}</p>
+    <p>Documento: {{ empleado.documento }}</p>
+    <p>Email: {{ empleado.email }}</p>
+    <p>Teléfono: {{ empleado.telefono }}</p>
+    <p>Dirección: {{ empleado.direccion }}</p>
+    <p>Fecha de Nacimiento: {{ empleado.fecha_nacimiento }}</p>
+    <p>Fecha de Ingreso: {{ empleado.fecha_ingreso }}</p>
+    <p>Unidad ID: {{ empleado.unidad_id }}</p>
+    <p>Puesto ID: {{ empleado.puesto_id }}</p>
+    <p>Manager ID: {{ empleado.manager_id }}</p>
+    <p>Foto URL: <a href="{{ empleado.foto_url }}">{{ empleado.foto_url }}</a></p>
+    <p>Estado: {{ empleado.get_estado_display }}</p>
+    <a href="{% url 'empleado_list' %}">Volver a la lista</a>
+    <a href="{% url 'empleado_update' empleado.pk %}">Editar</a>
+    <a href="{% url 'empleado_delete' empleado.pk %}">Eliminar</a>
+</body>
+</html>
